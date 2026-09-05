@@ -1,0 +1,13 @@
+name: aether
+mode: observe-first
+allowed:
+  - read_proc
+  - read_sysfs
+  - adb_shell_readonly
+denied:
+  - rewrite_kernel
+  - flash_boot
+  - replace_init_without_snapshot
+notes: |
+  The AI is the OS at the policy layer.
+  Linux remains the execution layer until there is a real bootloader + kernel project.
